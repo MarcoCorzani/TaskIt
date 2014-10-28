@@ -13,6 +13,11 @@
 		A98C785A19F9089900ECBB86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98C785919F9089900ECBB86 /* Images.xcassets */; };
 		A98C785D19F9089900ECBB86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98C785B19F9089900ECBB86 /* LaunchScreen.xib */; };
 		A98C786919F9089900ECBB86 /* TaskItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C786819F9089900ECBB86 /* TaskItTests.swift */; };
+		A98C787319F9139300ECBB86 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C787219F9139300ECBB86 /* TaskCell.swift */; };
+		A98C787519FAC54700ECBB86 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C787419FAC54700ECBB86 /* TaskModel.swift */; };
+		A98C787719FACA1A00ECBB86 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C787619FACA1A00ECBB86 /* TaskDetailViewController.swift */; };
+		A98C787919FD6B2600ECBB86 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C787819FD6B2600ECBB86 /* Date.swift */; };
+		A98C787B19FD79B500ECBB86 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C787A19FD79B500ECBB86 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		A98C786219F9089900ECBB86 /* TaskItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98C786719F9089900ECBB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98C786819F9089900ECBB86 /* TaskItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItTests.swift; sourceTree = "<group>"; };
+		A98C787219F9139300ECBB86 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		A98C787419FAC54700ECBB86 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		A98C787619FACA1A00ECBB86 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		A98C787819FD6B2600ECBB86 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		A98C787A19FD79B500ECBB86 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,11 @@
 			children = (
 				A98C785219F9089900ECBB86 /* AppDelegate.swift */,
 				A98C785419F9089900ECBB86 /* ViewController.swift */,
+				A98C787619FACA1A00ECBB86 /* TaskDetailViewController.swift */,
+				A98C787A19FD79B500ECBB86 /* AddTaskViewController.swift */,
+				A98C787419FAC54700ECBB86 /* TaskModel.swift */,
+				A98C787819FD6B2600ECBB86 /* Date.swift */,
+				A98C787219F9139300ECBB86 /* TaskCell.swift */,
 				A98C785619F9089900ECBB86 /* Main.storyboard */,
 				A98C785919F9089900ECBB86 /* Images.xcassets */,
 				A98C785B19F9089900ECBB86 /* LaunchScreen.xib */,
@@ -213,7 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A98C785519F9089900ECBB86 /* ViewController.swift in Sources */,
+				A98C787919FD6B2600ECBB86 /* Date.swift in Sources */,
+				A98C787319F9139300ECBB86 /* TaskCell.swift in Sources */,
+				A98C787519FAC54700ECBB86 /* TaskModel.swift in Sources */,
 				A98C785319F9089900ECBB86 /* AppDelegate.swift in Sources */,
+				A98C787719FACA1A00ECBB86 /* TaskDetailViewController.swift in Sources */,
+				A98C787B19FD79B500ECBB86 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,7 @@
 				INFOPLIST_FILE = TaskIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -349,6 +370,7 @@
 				INFOPLIST_FILE = TaskIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
