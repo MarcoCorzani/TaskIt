@@ -19,9 +19,9 @@ class Date {
         
         var gregorianCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
         
-        var date = gregorianCalendar.dateFromComponents(components)
+        var date = gregorianCalendar?.dateFromComponents(components)  // in XCode 6.1 you need to put "?" NCalendar returns an optional
         
-        return date!
+        return date! // here you unwrap it
     }
     
     
